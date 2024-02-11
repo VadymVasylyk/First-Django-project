@@ -1,0 +1,61 @@
+body{
+    background-color: #bbbdbb !important;
+    min-height: 100%;
+    position: relative;
+}
+
+.content-page{
+    min-height: 500px;
+}
+
+.reg-form label{
+    display: block;
+    margin-bottom: 5px;
+}
+
+.reg-form input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+.reg-form .helptext {
+    display: none
+}
+
+.reg-form button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.reg-form button:hover {
+    background-color: #45a049;
+}
+
+
+.upd-form label {
+    font-weight: bold;
+}
+
+.upd-form input[type="text"],
+.upd-form input[type="email"],
+.upd-form select,
+.upd-form input[type="file"] {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.upd-form input[type="text"],
+.upd-form input[type="email"],
+.upd-form select,
+.upd-form input[type="file"]{
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    margin-top: 5px;
+}
+
+

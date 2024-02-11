@@ -1,0 +1,15 @@
+{% extends 'main/base.html' %}
+
+{% block title %}Contact us{% endblock %}
+
+{% block content %}
+<div class="content-page container align-items-center px-5 py-2 mb-5">
+    <h1 class="text-center">Ask us any questions:</h1>
+    <form method="post" class="reg-form">
+        {% csrf_token %}
+        {{form}}
+        <button type="submit" class="bg-dark text-light mt-2">Send</button>
+    </form>
+</div>
+
+{% endblock %}

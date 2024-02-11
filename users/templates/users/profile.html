@@ -1,0 +1,22 @@
+{% extends 'main/base.html' %}
+
+{% block title %}MyProfile{% endblock %}
+
+{% block content %}
+
+<div class="content-page container px-5 py-2 mb-5">
+    <div class="d-flex text-body-secondary pt-3 bg-light p-2 rounded-pill">
+      <img src="{{user.profile.img.url}}" alt="user photo" class="bd-placeholder-img flex-shrink-0 mx-2 rounded-circle" width="64px" height="64px">
+      <p class="ms-2 pb-3 mb-0">
+        <strong class="d-block text-dark mb-2">@{{user.username}}</strong>
+        Email: {{user.email}} | Gender: {{user.profile.sex}}
+      </p>
+    </div>
+    <form method="post" enctype="multipart/form-data" class="upd-form mt-4">
+        {% csrf_token %}
+        {{userForm}}
+        {{profileForm}}
+        <button type="submit" class="btn btn-dark btn-lg mt-3 me-2 px-4 gap-3">Update</button>
+    </form>
+</div>
+{% endblock %}
